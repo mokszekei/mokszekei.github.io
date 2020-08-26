@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Website of Siqi Mo</title>
+    <link>https://example.com/categories/hugo/</link>
+    <description>Recent content in Hugo on Website of Siqi Mo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build personal website with HUGO</title>
+      <link>https://example.com/post/hugo_website_setup/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/hugo_website_setup/</guid>
+      <description>&lt;p&gt;This article offers a sample guide of setting up personal website with HUGO and publishing it with GitHub Pages in macOS.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
