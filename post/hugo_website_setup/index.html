@@ -105,7 +105,7 @@
         <div class="info">
           <i class="fa fa-sun-o"></i>
           <span class="date">Tue, Aug 25, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">3-minute read</span>
         </div>
         
         </div>
@@ -139,8 +139,30 @@ git submodule add https://github.com/lxndrblz/anatole.git themes/anatole
 <h3 id="step-5-run-the-hugo-server">Step 5: Run the Hugo server</h3>
 <p>With this code, you can see your new site at http://localhost:1313/.</p>
 <pre><code>hugo server -D
-</code></pre><h3 id="step-6-publish-website">Step 6: Publish Website</h3>
+</code></pre><h1 id="website-publication-with-github-pages">Website Publication with GitHub Pages</h1>
 <p><a href="https://pages.github.com">GitHub Pages</a> provides really convenience method to publish personal website. There is no need to configure server and set up database.</p>
+<h3 id="1-create-a-repository">1: Create a repository</h3>
+<p><a href="https://github.com/new">Create a new repository</a> named username.github.io, where username must be your <strong>username on GitHub</strong>. Then clone the new repository in the folder you would like to store this project.</p>
+<pre><code>git clone https://github.com/username/username.github.io
+</code></pre><h3 id="2-deploy-hugo-site">2: Deploy Hugo site</h3>
+<p>GitHub Pages can not actually recognize the file format of hugo. Therefore, we would need to generate HTML files that can be read by Github for Hugo site. To do this, we firstly need to open config.toml and make the following modification:</p>
+<pre><code>baseURL = &quot;https://mokszekei.github.io/&quot;
+languageCode = &quot;en&quot;
+DefaultContentLanguage = &quot;en&quot;
+title = &quot;Website of Siqi Mo&quot;
+theme = &quot;anatole&quot;
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+publishDir = &quot;mokszekei.github.io&quot;
+</code></pre><p>Hugo will now know it need to output our HTML files to &lt;github_username&gt;.github.io. Go to the directory of your Hugo project, run the following command:</p>
+<pre><code>hugo
+</code></pre><p>Then Hugo will generate the HTML which customize the content in your site. All of these html, css files would be in <code>public</code> folder. The next step we can do is copying and pasting files inside <code>public</code> to the GitHub repository. And then, post it.</p>
+<pre><code>git add .
+git commit -m &quot;host my website&quot;
+git push origin master
+</code></pre><p>Then we are done. You shoud be able to view your website <strong><a href="https://username.github.io">https://username.github.io</a></strong>.</p>
+<p><img src="/static/images/github.png" alt="Example image"></p>
     </div>
     <div class="post-footer">
       <div class="info">
