@@ -111,7 +111,7 @@
         </div>
 
     <p>This article offers a sample guide of setting up personal website with HUGO and publishing it with GitHub Pages in macOS.</p>
-<p>Nowadays, people are showing the great things they are building by publishing websites. Instead of making website from raw HTML and CSS, we can use Static site generators, like Jekyll, Octopress, Pelican, Middleman, and Hugo. I picked Hugo to build my blog.</p>
+<p>Nowadays, people are showing the great things they are building by publishing websites. Instead of making website from raw HTML and CSS, we can use Static site generators, like Jekyll, Octopress, Pelican, Middleman, and Hugo. I picked Hugo to build my blog. Codes for this website are shared in <a href="https://github.com/mokszekei/portfolio_website">my github</a></p>
 <h1 id="hugo-site-creation">Hugo site creation</h1>
 <p>The following content refered to <a href="https://themes.gohugo.io/anatole/">https://themes.gohugo.io/anatole/</a> and <a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a> .</p>
 <h3 id="step-1-install-hugo">Step 1: Install Hugo</h3>
@@ -145,27 +145,29 @@ git submodule add https://github.com/lxndrblz/anatole.git themes/anatole
 <p><a href="https://github.com/new">Create a new repository</a> named username.github.io, where username must be your <strong>username on GitHub</strong>. Then clone the new repository in the folder you would like to store this project.</p>
 <pre><code>git clone https://github.com/username/username.github.io
 </code></pre><h3 id="2-deploy-hugo-site">2: Deploy Hugo site</h3>
-<p>GitHub Pages can not actually recognize the file format of hugo. Therefore, we would need to generate HTML files that can be read by Github for Hugo site. To do this, we firstly need to open config.toml and make the following modification:</p>
-<pre><code>baseURL = &quot;https://mokszekei.github.io/&quot;
-languageCode = &quot;en&quot;
-DefaultContentLanguage = &quot;en&quot;
-title = &quot;Website of Siqi Mo&quot;
-theme = &quot;anatole&quot;
+<ul>
+<li>GitHub Pages can not actually recognize the file format of hugo. Therefore, we would need to generate HTML files that can be read by Github for Hugo site. To do this, we firstly need to open <strong>config.toml</strong> and make the following modification:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">baseURL = &#34;https://mokszekei.github.io/&#34;
+languageCode = &#34;en&#34;
+DefaultContentLanguage = &#34;en&#34;
+title = &#34;Website of Siqi Mo&#34;
+theme = &#34;anatole&#34;
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
-publishDir = &quot;mokszekei.github.io&quot;
-</code></pre><p>Hugo will now know it need to output our HTML files to &lt;github_username&gt;.github.io. Go to the directory of your Hugo project, run the following command:</p>
+publishDir = &#34;mokszekei.github.io&#34;</code></pre></div></li>
+<li>Now, Hugo know it need to output our HTML files to &lt;github_username&gt;.github.io. Go to the directory of your Hugo project, run the following command:</li>
+</ul>
 <pre><code>hugo
-</code></pre><p>Then Hugo will generate the HTML which customize the content in your site. All of these html, css files would be in <code>public</code> folder. The next step we can do is copying and pasting files inside <code>public</code> to the GitHub repository. And then, post it.</p>
+</code></pre><ul>
+<li>Then Hugo will generate the HTML which customize the content in your site. All of these html, css files would be in <code>public</code> folder. The next step we can do is copying and pasting files inside <code>public</code> to the GitHub repository. And then, post it.</li>
+</ul>
 <pre><code>git add .
 git commit -m &quot;host my website&quot;
 git push origin master
-</code></pre><p>Then we are done. You shoud be able to view your website <strong><a href="https://username.github.io">https://username.github.io</a></strong>.</p>
+</code></pre><p>Done! You shoud be able to view your website <strong><a href="https://username.github.io">https://username.github.io</a></strong>. You can also go to the github repository, press setting and roll down to Github Pages to see whether your website is successfully published.</p>
 <figure>
-    <img src="https://github.com/mokszekei/mokszekei.github.io/blob/master/images/github.png"/> <figcaption>
-            <h4>github pages</h4>
-        </figcaption>
+    <img src="/images/github.png"/> 
 </figure>
     </div>
     <div class="post-footer">
