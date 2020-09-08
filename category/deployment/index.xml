@@ -103,7 +103,12 @@ git push origin master
 
 
 
+  
 
+
+
+  
+  
 
 
 
@@ -118,10 +123,10 @@ git push origin master
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/images/github.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/getting-started/github_hu25d9e3b36fa4d7eeafca2d63da14b1c9_247824_2000x2000_fit_lanczos_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;/images/github.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img data-src=&#34;/post/getting-started/github_hu25d9e3b36fa4d7eeafca2d63da14b1c9_247824_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1916&#34; height=&#34;1326&#34;&gt;
 &lt;/a&gt;
 
 
